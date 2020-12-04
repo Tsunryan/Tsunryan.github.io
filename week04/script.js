@@ -17,3 +17,16 @@ alert ("Password must be more than 5 charater")
 
 let elPassword = document.getElementById("namaPengguna");
 elPassword.onblur = checkPasswordLength;
+
+function checkPasswordLength2(txt){
+    if(txt.length < 5){
+        alert("Must be more than 5 charater")
+    }else{
+        alert ("Password may pass")
+    }
+}
+let elPassword2 = document.getElementById("kataLaluan2");
+elPassword2.addEventListener("blur",function(){
+    let a = document.getElementById("kataLaluan2");
+    checkPasswordLength2(a.value);
+});
