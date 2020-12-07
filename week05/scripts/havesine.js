@@ -35,7 +35,7 @@ function haversine (lat1,long1,lat2,long2) {
    let ellocate = document.getElementById("locate");
    ellocate.addEventListener("click",function(){
     if (navigator.geolocation){
-        
+        navigator.geolocation.getCurrentPosition(function(position){
         let elLat = document.getElementById("lat")
         let elLong = document.getElementById("long")
         let elDepluze = document.getElementById("depulze")
@@ -53,7 +53,7 @@ function haversine (lat1,long1,lat2,long2) {
         elSunway.innerHTML = "Distance to Sunway : " + distances[1]
         elKlcc.innerHTML = "Distance to KLCC : " + distances[2]
     });
-    else {
+}else {
         alert("Geolocation is not supported")
     }
    });
