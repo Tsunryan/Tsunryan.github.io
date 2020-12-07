@@ -1,7 +1,7 @@
 function haversine (lat1,long1,lat2,long2) {
     let R = 6371 // earth radius in KM
-    let dLet = (lat1,lat2).toRAd();
-    let dLon = (lon1,lon2).toRAd();
+    let dLet = (lat1,lat2).toRad();
+    let dLon = (lon1,lon2).toRad();
     lat1 = lat1.toRad();
     lat2 = lat2.toRad();
     
@@ -34,7 +34,8 @@ function haversine (lat1,long1,lat2,long2) {
 
    let ellocate = document.getElementById("locate");
    ellocate.addEventListener("click",function(){
-    if (navigator.geolocation.getCurrentPosition(function(position){
+    if (navigator.geolocation){
+        
         let elLat = document.getElementById("lat")
         let elLong = document.getElementById("long")
         let elDepluze = document.getElementById("depulze")
@@ -51,7 +52,7 @@ function haversine (lat1,long1,lat2,long2) {
         elDepluze.innerHTML = "Distance to Dpulze : " + distances[0]
         elSunway.innerHTML = "Distance to Sunway : " + distances[1]
         elKlcc.innerHTML = "Distance to KLCC : " + distances[2]
-    }));
+    });
     else {
         alert("Geolocation is not supported")
     }
