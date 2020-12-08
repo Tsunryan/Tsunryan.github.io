@@ -18,4 +18,5 @@ window.onload = function(){
     freezeBtn.addEventListener('mouseup',function(){
         video.play();
     })
+    //test
 };
