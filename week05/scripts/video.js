@@ -18,7 +18,7 @@ window.onload = function(){
     freezeBtn.addEventListener('mouseup',function(){
         video.play();
     })
-    let seekBar = docuemnt.getElementById('seekBar');
+    let seekBar = document.getElementById('seekBar');
     seekBar.addEventListener('change',function(){
         let time = video.duration * (seekBar.value / 100)
         video.currentTime = time;
