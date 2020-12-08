@@ -13,7 +13,7 @@ window.onload = function(){
 
     let freezeBtn = document.getElementById('freezeBtn');
     freezeBtn.addEventListener('mousedown',function(){
-        video.pause
+        video.pause();
     })
     freezeBtn.addEventListener('mouseup',function(){
         video.play();
