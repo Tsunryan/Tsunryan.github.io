@@ -2,7 +2,7 @@ function getRandomUser(){
     let xhttps = new XMLHttpRequest() //create request object
 
     xhttps.onreadystatechange = function(){
-        if(this.readyState == 4 && this.status == 200)
+        if(this.readyState == 4 && this.status == 200){
             let data = JSON.parse(this.response);
             let elFirstName = document.getElementById('FirstName');
             let elLastName = document.getElementById('LastName');
@@ -14,10 +14,11 @@ function getRandomUser(){
             
             elJsonResult.innerHTML = this.response;
     }
+}
 
     xhttp.open('GET','https://randomuser.me/api/', true);
     xhttps.send();
-    };
+    }
 
 
 let elGetRandomUser = document.getElementById('getRandomUserBtn');
