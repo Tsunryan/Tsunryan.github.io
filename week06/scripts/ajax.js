@@ -16,8 +16,14 @@ function getRandomUser(){
             elLastName.innerHTML = data.results[0].name.last;
             elUserImage.src = data.picture[0].picture.large;
             elUserImage.title = data.results[0].name.first + ' ' + data.results[0].name.last;
-            
-
+            elPhone.innerHTML = data.results[0].phone
+            elAddress.innerHTML = data.result[0].location.street.number + ',' + 
+            data.results[0].location.street.name + '<br>' + 
+            data.results[0].location.postcode + ' ' + 
+            data.results[0].locations.city + '<br>' + 
+            data.results[0].location.states + '.' +
+            data.results[0].location.country;
+            elEmail.innerHTML = data.results[0].email    
             eljsonResult.innerHTML = this.response;
     }
 }
