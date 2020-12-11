@@ -20,7 +20,7 @@ function getRandomUser(){
             elAddress.innerHTML = data.results[0].location.street.number + ',' + 
             data.results[0].location.street.name + '<br>' + 
             data.results[0].location.postcode + ' ' + 
-            data.results[0].locations.city + '<br>' + 
+            data.results[0].location.city + '<br>' + 
             data.results[0].location.states + '.' +
             data.results[0].location.country;
             elEmail.innerHTML = data.results[0].email    
