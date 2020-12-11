@@ -18,3 +18,9 @@ function getRandomUser(){
     xhttp.open('GET','https://randomuser.me/api/', true);
     xhttps.send();
     };
+
+
+let elGetRandomUser = document.getElementById('getRandomUserBtn');
+elGetRandomUser.addEventListener('click',function(){
+    getRandomUser();
+})
