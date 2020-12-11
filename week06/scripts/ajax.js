@@ -16,7 +16,7 @@ function getRandomUser(){
     }
 }
 
-    xhttp.open('GET','https://randomuser.me/api/',true);
+    xhttps.open('GET','https://randomuser.me/api/',true);
     xhttps.send();
     }
 
