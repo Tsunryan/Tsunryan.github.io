@@ -12,7 +12,7 @@ function getRandomUser(){
             let elAddress = document.getElementById('address');
             let elEmail = document.getElementById('email');
             
-            elJsonResult.innerHTML = this.response;
+            eljsonResult.innerHTML = this.response;
     }
 }
 
