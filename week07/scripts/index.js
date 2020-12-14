@@ -44,7 +44,7 @@ let app5 = new Vue({
     },
     methods:{
         reverseMessage: function(){
-            this.message = this.message.split("").reverse().joint("");
+            this.message = this.message.split("").reverse().join("");
         }
     }
 });
