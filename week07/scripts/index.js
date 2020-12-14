@@ -14,9 +14,26 @@ let app2 = new Vue({
     }
 });
     
-    let app3 = new Vue ({
-        el:"#app3",
-        data:{
-            seen: true
+let app3 = new Vue ({
+    el:"#app3",
+    data:{
+        seen: true
+    }
+});
+
+let app4 = new Vue ({
+    el:"#app4",
+    data:{
+        todos:[{
+            text:"Learn Javascript"
+        },
+        {
+            text:"Learn Vue"
+        },
+        {
+            text:"Build Something Awesome"
         }
-    });
+    ]
+
+    }
+});
