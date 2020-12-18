@@ -75,3 +75,9 @@ function DeleteBooking(id){
             GetBookings();
     });
 }
+
+let deleteBooking = document.getElementById('deleteBooking');
+deleteBooking.addEventListener('click', function(){
+    let deleteId = doc.getElementById('deleteId').value;
+    DeleteBooking(deleted);
+});
