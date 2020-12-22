@@ -5,7 +5,7 @@ function BookNow(userName, userEmail, userPax, userRemarks) {
             name: userName,
             email: userEmail,
             pax: userPax
-            remark: userRemarks
+            remarks: userRemarks
         }
     }
     fetch(url, {
