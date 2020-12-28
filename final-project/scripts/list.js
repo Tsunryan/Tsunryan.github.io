@@ -23,6 +23,7 @@ function GetBookings() {
                 let buttonId = "delete" + gId;
 
                 let row = bookingList.insertRow(bookingList.rows.length);
+                document.write("<tbody>" + txt.fontcolor("white") + "</tbody>");
                 row.insertCell(0).innerHTML = gId;
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
